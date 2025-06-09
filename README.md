@@ -1,4 +1,4 @@
-# AI 541 Final Project: Identifying Malicious IoMT Network Traffic
+# AI 541 Final: Identifying Malicious IoMT Network Traffic
 **Author:** Noah Pragin
 
 ## Project Overview
