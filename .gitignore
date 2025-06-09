@@ -1,0 +1,17 @@
+# Caches
+.DS_Store
+__pycache__/
+
+# Outputs
+results/
+histograms/
+
+# Scripts and script outputs
+bat.sh
+*.out
+*.err
+*.log
+
+# Irrelevant code
+composite_graph.py
+r7.py

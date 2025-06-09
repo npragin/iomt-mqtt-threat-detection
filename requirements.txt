@@ -1,0 +1,7 @@
+pandas
+ydata-profiling
+matplotlib
+scipy
+scikit-learn
+numpy
+imbalanced-learn
