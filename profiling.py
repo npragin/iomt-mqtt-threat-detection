@@ -22,7 +22,8 @@ def generate_numeric_feature_table(df: pd.DataFrame) -> pd.DataFrame:
     - Median (50th percentile)
     - Standard deviation
 
-    All numeric values are formatted in scientific notation with 2 decimal places.
+    Values >= 1e5 are formatted in scientific notation with 2 decimal places.
+    Values < 1e5 are formatted as regular decimals with 2 decimal places.
     The 'Label' column is excluded from the analysis.
 
     Args:
@@ -32,16 +33,23 @@ def generate_numeric_feature_table(df: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame: A dataframe with rows for each feature and columns for the statistics
     """
 
+    def format_value(value):
+        """Format value conditionally based on magnitude."""
+        if abs(value) >= 1e5:
+            return f'{value:.2e}'
+        else:
+            return f'{value:.2f}'
+
     data = []
     for feature_name in df.columns:
         if feature_name not in ["Label"]:
             stats = df[feature_name].describe()
             row = {
                 "name": feature_name,
-                "min": f'{stats["min"]:.2e}',
-                "max": f'{stats["max"]:.2e}',
-                "mean": f'{stats["mean"]:.2e}',
-                "50%": f'{stats["50%"]:.2e}',
+                "min": format_value(stats["min"]),
+                "max": format_value(stats["max"]),
+                "mean": format_value(stats["mean"]),
+                "50%": format_value(stats["50%"]),
             }
             data.append(row)
 
