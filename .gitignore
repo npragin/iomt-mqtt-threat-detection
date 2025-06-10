@@ -5,6 +5,7 @@ __pycache__/
 # Outputs
 results/
 histograms/
+stats/
 
 # Scripts and script outputs
 bat.sh
