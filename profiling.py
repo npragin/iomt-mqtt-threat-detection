@@ -42,7 +42,6 @@ def generate_numeric_feature_table(df: pd.DataFrame) -> pd.DataFrame:
                 "max": f'{stats["max"]:.2e}',
                 "mean": f'{stats["mean"]:.2e}',
                 "50%": f'{stats["50%"]:.2e}',
-                "std": f'{stats["std"]:.2e}',
             }
             data.append(row)
 
