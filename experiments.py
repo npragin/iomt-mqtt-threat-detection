@@ -114,6 +114,11 @@ def main():
         results = run_experiments(X_train, y_train, X_test, y_test, models, experiments)
         results.to_csv(f"results/{experiment_name}_results.csv")
 
+        # Normalize the data for non-feature scaling experiments
+        if experiment_name == "feature_scaling":
+            X_train = MinMaxScaler().fit_transform(X_train)
+            X_test = MinMaxScaler().fit_transform(X_test)
+
 
 if __name__ == "__main__":
     main()
