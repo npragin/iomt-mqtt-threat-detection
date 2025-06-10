@@ -232,7 +232,9 @@ def main():
                                     3,
                                 ),
                             ),
-                        ]
+                        ],
+                        remainder="passthrough",
+                        n_jobs=-1,
                     ),
                 ),
             ]
