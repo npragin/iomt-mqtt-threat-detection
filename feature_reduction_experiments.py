@@ -621,15 +621,15 @@ def main():
     # save_feature_elimination_results(results, "sequential")
 
     # Run recursive feature selection experiments and save results
-    # results = run_recursive_feature_selection_experiments(
-    #     models,
-    #     models["Random Forest"],
-    #     X_train,
-    #     y_train,
-    #     X_test,
-    #     y_test,
-    # )
-    # save_feature_elimination_results(results, "recursive")
+    results = run_recursive_feature_selection_experiments(
+        models,
+        models["Random Forest"],
+        X_train,
+        y_train,
+        X_test,
+        y_test,
+    )
+    save_feature_elimination_results(results, "recursive")
 
 
 if __name__ == "__main__":
