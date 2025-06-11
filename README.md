@@ -3,6 +3,8 @@
 **Author:** Noah Pragin  
 **Instructor:** Dr. Kiri Wagstaff
 
+Read the full report [here](assets/report.pdf)!
+
 ## Project Overview
 
 This project implements machine learning techniques to improve the classification of IoMT (Internet of Medical Things) network traffic over MQTT as benign or malicious by addressing three key challenges:
