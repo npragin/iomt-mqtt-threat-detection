@@ -1,5 +1,6 @@
 # Identifying Malicious IoMT Network Traffic
-**Author:** Noah Pragin
+
+**Author:** Noah Pragin  
 **Instructor:** Dr. Kiri Wagstaff
 
 ## Project Overview
