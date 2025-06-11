@@ -1,5 +1,6 @@
-# AI 541 Final: Identifying Malicious IoMT Network Traffic
+# Identifying Malicious IoMT Network Traffic
 **Author:** Noah Pragin
+**Instructor:** Dr. Kiri Wagstaff
 
 ## Project Overview
 
